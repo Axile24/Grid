@@ -7,14 +7,37 @@ padding: 0;
 }
 body{
     display: grid;
-    grid-template-columns: repeat(1fr, auto) ;/* 1   FRACTION 3 GÅNGER*/
+    grid-template-columns:
+    
+    
+    /* 1   FRACTION 3 GÅNGER*/
     gap: 1 rem;
-    height: 500px;
+    height: 100vh;
     border: 1px solid black;
+    grid-template-areas: "header header header ", "main main ", "article article ", "footer footer footer";
+    padding: 10px;
 
 }
-header, main , footer{
+header, main, article, footer, aside{
     min-height: 100%;
-    background-color: burlywood;
+    background-color: rgb(142, 142, 218);
+    border-radius: 20px;
+
 
 }
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+
+article{
+
+    grid-area: article ;
+}
+footer{
+    grid-area: footer;
+}
+
+
